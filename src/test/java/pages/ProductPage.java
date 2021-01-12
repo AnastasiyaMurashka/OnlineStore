@@ -20,6 +20,7 @@ public class ProductPage extends AbstractPage {
     public String getProductIdFromProductPage() {
         waitPresenceOfElementLocated(driver, PRODUCT_ID_SPAN);
         System.out.println("Hello Eva");
+        System.out.println("Hello !!!!!!");
         return driver.findElement(PRODUCT_ID_SPAN).getText().substring(5);
     }
 
