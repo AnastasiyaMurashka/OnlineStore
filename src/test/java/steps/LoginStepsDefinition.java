@@ -23,13 +23,12 @@ public class LoginStepsDefinition {
 
     @Given("^User is on login form$")
     public void userIsOnLoginForm() {
-        mainPage = new MainPage(driver);
-        mainPage.openPage().clickOnLoginSpan().clickOnPersonalCabinetReference();
+        System.out.println("Login form1");
     }
 
     @Given("^User has valid credentials$")
     public void userHasValidCredentials() {
-        user = UserBuilder.getUserWithValidCredentials();
+        System.out.println("User has valid credentials");
     }
 
     @When("^User inputs name$")
